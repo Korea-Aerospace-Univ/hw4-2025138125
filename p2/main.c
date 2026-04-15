@@ -7,27 +7,23 @@ int main()
  int max_num =0, max_eng =0;
  char a = '\0';
  scanf("%d", &n);
+ getchar();
  for(int i =0; i<=n;i++) {
      scanf("%c", &a);
      if('a'<= a && a <= 'z'){
          eng++;
+       if(max_num <= num) {
+         max_num =num;}
          num =0;
      } 
      else if('0' <= a && a <= '9') {
          num++;
+      if(max_eng <= eng) {
+         max_eng =eng; }
          eng = 0;
-     }
-     else {
-         continue;
-     }
-     
-     if(eng !=0 && max_eng <= eng) {
-         max_eng =eng;
-     }
-     if(num !=0 && max_num <= num) {
-         max_num =num;
-     }
+     }  
  }
+   
  printf("%d\n%d",max_eng, max_num);
  return 0;
  
