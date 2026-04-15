@@ -7,14 +7,14 @@ int main()
  scanf("%d", &ans);
  do {
  scanf("%d", &n);
- if (ans > n){
-    printf("%d > %d\n", ans, n); 
+ if (ans < n){
+    printf("%d > %d\n", n, ans); 
  }
- else if(ans < n) {
-     printf("%d < %d\n", ans, n);
+ else if(ans > n) {
+     printf("%d < %d\n", n, ans);
  }
  else {
-     printf("%d == %d\n", ans, n);
+     printf("%d == %d\n", n, ans);
  }
  count ++;
 } while(ans != n);
