@@ -19,6 +19,6 @@ int main()
  count ++;
 } while(ans != n);
 
-printf("시도횟수는 %d회", count);
+printf("%d", count);
 return 0;
 }
