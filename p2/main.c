@@ -28,9 +28,10 @@ int main()
      num = 0;
      eng = 0;
  }
+ }
    
  printf("%d\n%d",max_eng, max_num);
  return 0;
  
-}
+
 }
