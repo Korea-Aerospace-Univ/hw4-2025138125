@@ -21,10 +21,10 @@ int main()
          continue;
      }
      
-     if(eng !=0) {
+     if(eng !=0 && max_eng <= eng) {
          max_eng =eng;
      }
-     if(num !=0) {
+     if(num !=0 && max_num <= num) {
          max_num =num;
      }
  }
