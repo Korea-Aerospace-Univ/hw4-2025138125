@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main()
@@ -8,13 +7,13 @@ int main()
  do {
  scanf("%d", &n);
  if (ans < n){
-    printf("%d > %d\n", n, ans); 
+    printf("%d>?\n", n); 
  }
  else if(ans > n) {
-     printf("%d < %d\n", n, ans);
+     printf("%d<?\n", n);
  }
  else {
-     printf("%d == %d\n", n, ans);
+     printf("%d==?\n", n);
  }
  count ++;
 } while(ans != n);
