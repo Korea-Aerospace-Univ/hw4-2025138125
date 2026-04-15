@@ -23,10 +23,14 @@ int main()
       if(max_num <= num) {
          max_num =num;}
          
-     }  
+     } 
+    else {
+     num = 0;
+     eng = 0;
  }
    
  printf("%d\n%d",max_eng, max_num);
  return 0;
  
+}
 }
