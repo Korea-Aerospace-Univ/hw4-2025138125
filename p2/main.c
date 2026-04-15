@@ -11,16 +11,18 @@ int main()
  for(int i =0; i<=n;i++) {
      scanf("%c", &a);
      if('a'<= a && a <= 'z'){
-         eng++;
-       if(max_num <= num) {
-         max_num =num;}
-         num =0;
+       eng++;
+       num =0;
+       if(max_eng <= eng) {
+         max_eng =eng; }
+        
      } 
      else if('0' <= a && a <= '9') {
-         num++;
-      if(max_eng <= eng) {
-         max_eng =eng; }
-         eng = 0;
+      num++;
+      eng = 0;
+      if(max_num <= num) {
+         max_num =num;}
+         
      }  
  }
    
